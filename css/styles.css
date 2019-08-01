@@ -16,8 +16,241 @@ img {
     height: auto;
 }
 
-.mogo-container {
+/* Header */
+.header {
+    padding: 50px 0;
+}
+
+.golden-container {
     width: 100%;
     max-width: 940px;
+    margin: 0 auto;
+}
+
+.header .golden-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.golden-navigation-list {
+    width: 490px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.golden-navigation-list-item-link {
+    display: block;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222222;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.golden-navigation-list-item-link:hover {
+    color: #fed136;
+}
+
+/* Services section */
+.services-section {
+    padding: 50px 0;
+}
+
+.services-section-header {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #222222;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.services-section-description {
+    font-family: "Noto Sans", "Arial", sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 17px;
+    color: #777777;
+    text-align: center;
+
+    margin-bottom: 170px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+.services-list-item {
+    width: 280px;
+    position: relative;
+}
+
+.services-list-item::before {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    
+    content: "";
+    width: 75px;
+    height: 75px;
+}
+
+.services-list-item:nth-child(1)::before {
+    background-image: url("../img/services/basket.png");
+}
+
+.services-list-item:nth-child(2)::before {
+    background-image: url("../img/services/laptop.png");
+}
+
+.services-list-item:nth-child(3)::before {
+    background-image: url("../img/services/locked.png");
+}
+
+.services-list-item-header {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222222;
+    text-align: center;
+
+    padding-top: 28px;
+    margin-bottom: 22px;
+}
+
+.services-list-item-text {
+    font-family: Roboto Slab;
+    font-size: 14px;
+    line-height: 17px;
+    color: #777777;
+    text-align: center;
+}
+
+/* Contact-us section */
+.contact-us-section {
+    padding: 50px 0;
+    
+    background-image: url("../img/contact_us/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-us-section-header {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.contact-us-section-description {
+    font-family: "Noto Sans", "Arial", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 19px;
+    color: #777777;
+    text-align: center;
+
+    margin-bottom: 74px;
+}
+
+/* Inputs container */
+.contact-us-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-list-item {
+    margin-bottom: 26px;
+}
+
+.contact-list-item input {
+    width: 436px;
+    height: 52px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #bbbbbb;
+
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+.contact-list-item input::placeholder {
+    color: #bbbbbb;
+}
+
+.contact-list-item:valid,{
+    margin-bottom: 26px;
+}
+
+.contact-us input:focus:valid,
+.contact-us textarea:focus:valid {
+    outline: 2px solid #007200;
+}
+
+.contact-us input:focus:invalid,
+.contact-us textarea:focus:invalid {
+    outline: 2px solid #720000;
+}
+
+.contact-us textarea {
+    width: 436px;
+    height: 198px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #bbbbbb;
+
+    border-radius: 5px;
+    padding: 20px 0 0 20px;
+    resize: none;
+}
+
+.contact-us textarea::placeholder {
+    color: #bbbbbb;
+}
+
+.contact-us-submit {
+    display: block;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    width: 240px;
+    height: 66px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    
+    background-color: #fed136;
+    border-radius: 5px;
+
     margin: 0 auto;
 }
